@@ -16,7 +16,8 @@
                 Margin="24,98,0,0"
                 VerticalAlignment="Top"
                 Width="80"
-                Height="80" />
+                Height="80"
+                Click="button_Click" />
         <Button x:Name="button1"
                 Content="Live support"
                 HorizontalAlignment="Left"

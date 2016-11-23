@@ -20,9 +20,16 @@ namespace BikeShop
     /// </summary>
     public partial class ProductsManagement : Page
     {
+        ProductsFactory factory = new ProductsFactory();
         public ProductsManagement()
         {
             InitializeComponent();
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            dataGrid.ItemsSource =
+                factory.FindProducts(textBox.Text);
         }
     }
 }
