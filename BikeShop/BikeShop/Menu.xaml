@@ -9,34 +9,60 @@
       d:DesignWidth="300"
       Title="Menu"
       Background="{StaticResource background}">
-    <Grid>
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Ellipse Fill="#AA000000"
+                                     Margin="10, 10, 0, 0" />
+                            <Ellipse Fill="{TemplateBinding Background}"
+                                     Margin="0, 0, 10, 10" />
+                            <Viewbox Margin="5, 5, 15, 15">
+                                <ContentPresenter />
+                            </Viewbox>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+    <Grid HorizontalAlignment="Center"
+          VerticalAlignment="Center">
         <Button x:Name="button"
                 Content="Products"
                 HorizontalAlignment="Left"
-                Margin="24,98,0,0"
+                Margin="10,9,0,0"
                 VerticalAlignment="Top"
                 Width="80"
                 Height="80"
-                Click="button_Click" />
+                Click="button_Click"
+                Background="#FF7161E1"
+                Foreground="White" />
         <Button x:Name="button1"
                 Content="Live support"
                 HorizontalAlignment="Left"
-                Margin="123,98,0,0"
+                Margin="109,9,0,0"
                 VerticalAlignment="Top"
                 Width="80"
                 Height="80"
-                Click="button1_Click" />
+                Click="button1_Click"
+                Background="#FFDD6F31"
+                Foreground="White" />
         <Button x:Name="button2"
                 Content="Email support"
                 HorizontalAlignment="Left"
-                Margin="220,98,0,0"
+                Margin="206,9,0,0"
                 VerticalAlignment="Top"
                 Width="80"
                 Height="80"
-                Click="button2_Click" />
+                Click="button2_Click"
+                Background="#FF9F0043"
+                Foreground="White" />
         <TextBlock x:Name="textBlock"
                    HorizontalAlignment="Left"
-                   Margin="67,207,0,0"
+                   Margin="53,118,0,0"
                    TextWrapping="Wrap"
                    Text="Adventure Works"
                    VerticalAlignment="Top"
