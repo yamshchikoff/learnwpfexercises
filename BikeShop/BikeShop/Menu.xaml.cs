@@ -42,7 +42,7 @@ namespace BikeShop
         private void button_Click(object sender, RoutedEventArgs e)
         {
             NavigationService.Navigate(
-              new Uri("/ProductsManagement.xaml", UriKind.Relative)
+              new Uri("/ProductsManagementMVVM.xaml", UriKind.Relative)
             );
         }
     }
