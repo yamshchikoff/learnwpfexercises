@@ -18,7 +18,7 @@
                  Height="23"
                  Margin="141,39,0,0"
                  TextWrapping="Wrap"
-                 Text="{Binding Euros}"
+                 Text="{Binding Euros, UpdateSourceTrigger=PropertyChanged}"
                  VerticalAlignment="Top"
                  Width="120" />
         <TextBlock x:Name="textBlock"
